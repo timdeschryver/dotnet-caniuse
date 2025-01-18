@@ -1,0 +1,22 @@
+---
+import ThemeSwitcher from "./ThemeSwitcher.astro";
+import GithubIcon from "../assets/github.svg";
+---
+
+<header class="w-full border-b border-gray-200 dark:border-indigo-400/30 bg-white/50 dark:bg-gray-900/50">
+    <div class="container mx-auto py-4">
+        <div class="flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800 dark:text-white">.NET Caniuse</h1>
+            <div class="flex items-center gap-4">
+                <ThemeSwitcher />
+                <a href="https://github.com/timdeschryver/dotnet-caniuse" 
+                    target="_blank" 
+                    rel="noopener" 
+                    class="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                    <GithubIcon class="w-5 h-5" />
+                    <span>Contribute</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
