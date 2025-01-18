@@ -1,0 +1,51 @@
+{
+    "$schema": "../schemas/version.schema.json",
+    "version": ".NET 9",
+    "releaseDate": "2024-11-12",
+    "endOfSupportDate": "2026-05-12",
+    "label": "STS",
+    "features": [
+        {
+            "tags": ["Libraries", "System.Text.Json"],
+            "name": "Nullable reference type annotations",
+            "description": "System.Text.Json adds support for nullable reference type annotations and exporting JSON schemas from types.",
+            "docs": "https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview"
+        },
+        {
+            "tags": ["Libraries", "LINQ"],
+            "name": "CountBy",
+            "description": "Returns the count of elements in the source sequence grouped by key.",
+            "docs": "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.countby"
+        },
+        {
+            "tags": ["Libraries", "LINQ"],
+            "name": "AggregateBy",
+            "description": "Applies an accumulator function over a sequence, grouping results by key.",
+            "docs": "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.aggregateby"
+        },
+        {
+            "tags": ["Libraries", "LINQ"],
+            "name": "Index",
+            "description": "Returns an enumerable that incorporates the element's index into a tuple.",
+            "docs": "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.index"
+        },
+        {
+            "tags": ["Aspire"],
+            "name": "Browser telemetry support",
+            "description": "The dashboard supports OpenTelemetry Protocol (OTLP) over HTTP and cross-origin resource sharing (CORS). These features unlock the ability to send OpenTelemetry from browser apps to the .NET Aspire dashboard.",
+            "docs": "https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/dashboard/enable-browser-telemetry"
+        },
+        {
+            "tags": ["C#"],
+            "name": "params collections",
+            "description": "The params modifier isn't limited to array types. You can now use params with any recognized collection type.",
+            "docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-13.0/params-collections"
+        },
+        {
+            "tags": ["ASP.NET", "OpenAPI"],
+            "name": "OpenAPI document generation",
+            "description": "Built-in support for generating OpenAPI documents from ASP.NET Core web APIs.",
+            "docs": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/aspnetcore-openapi?view=aspnetcore-9.0&tabs=visual-studio"
+        }
+    ]
+}

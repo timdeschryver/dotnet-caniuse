@@ -1,0 +1,8 @@
+{
+    "$schema": "../schemas/version.schema.json",
+    "version": ".NET 7",
+    "releaseDate": "2022-11-08",
+    "endOfSupportDate": "2024-05-14",
+    "label": "STS",
+    "features": []
+}

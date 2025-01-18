@@ -1,0 +1,12 @@
+---
+import { getCollection } from "astro:content";
+import Features from "../components/Features.svelte";
+import Layout from "../layouts/Layout.astro";
+
+const allVersions = await getCollection("versions");
+const versions = allVersions.map((v) => v.data);
+---
+
+<Layout>
+    <Features client:load versions={versions} />
+</Layout>

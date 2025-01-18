@@ -1,0 +1,21 @@
+{
+    "$schema": "../schemas/version.schema.json",
+    "version": ".NET 8",
+    "releaseDate": "2023-11-14",
+    "endOfSupportDate": "2026-11-10",
+    "label": "LTS",
+    "features": [
+        {
+            "tags": ["C#"],
+            "name": "Primary constructors",
+            "description": "You can now create primary constructors in any class and struct. Primary constructors are no longer restricted to record types.",
+            "docs": "https://devblogs.microsoft.com/dotnet/csharp-primary-constructors-refactoring/"
+        },
+        {
+            "tags": ["C#"],
+            "name": "Collection expressions",
+            "description": "Collection expressions introduce a new terse syntax to create common collection values. Inlining other collections into these values is possible using a spread element ..e.",
+            "docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/collection-expressions#spread-element"
+        }
+    ]
+}
