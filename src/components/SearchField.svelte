@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Label from "./Label.svelte";
-  let { label = "", search = $bindable("") } = $props();
+import Label from "./Label.svelte";
+let { label = "", search = $bindable("") } = $props();
 </script>
 
 <div class="space-y-2">

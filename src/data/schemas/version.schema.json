@@ -1,52 +1,52 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "type": "object",
-    "required": ["version", "releaseDate", "endOfSupportDate", "label", "features"],
-    "properties": {
-        "version": {
-            "type": "string",
-            "description": "The .NET version number"
-        },
-        "releaseDate": {
-            "type": "string",
-            "format": "date",
-            "description": "Release date of this .NET version"
-        },
-        "endOfSupportDate": {
-            "type": "string",
-            "format": "date",
-            "description": "End of support date for this .NET version"
-        },
-        "label": {
-            "type": "string",
-            "enum": ["LTS", "STS"],
-            "description": "Support type: Long Term Support (LTS) or Standard Term Support (STS)"
-        },
-        "features": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "required": ["tags", "name", "description", "docs"],
-                "properties": {
-                    "tags": {
-                        "type": "array",
-                        "description": "Category of the feature"
-                    },
-                    "name": {
-                        "type": "string",
-                        "description": "Name of the feature"
-                    },
-                    "description": {
-                        "type": "string",
-                        "description": "Description of the feature"
-                    },
-                    "docs": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "URL to the feature documentation"
-                    }
-                }
-            }
-        }
-    }
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"type": "object",
+	"required": ["version", "releaseDate", "endOfSupportDate", "label", "features"],
+	"properties": {
+		"version": {
+			"type": "string",
+			"description": "The .NET version number"
+		},
+		"releaseDate": {
+			"type": "string",
+			"format": "date",
+			"description": "Release date of this .NET version"
+		},
+		"endOfSupportDate": {
+			"type": "string",
+			"format": "date",
+			"description": "End of support date for this .NET version"
+		},
+		"label": {
+			"type": "string",
+			"enum": ["LTS", "STS"],
+			"description": "Support type: Long Term Support (LTS) or Standard Term Support (STS)"
+		},
+		"features": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["tags", "name", "description", "docs"],
+				"properties": {
+					"tags": {
+						"type": "array",
+						"description": "Category of the feature"
+					},
+					"name": {
+						"type": "string",
+						"description": "Name of the feature"
+					},
+					"description": {
+						"type": "string",
+						"description": "Description of the feature"
+					},
+					"docs": {
+						"type": "string",
+						"format": "uri",
+						"description": "URL to the feature documentation"
+					}
+				}
+			}
+		}
+	}
 }

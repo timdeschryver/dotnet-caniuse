@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { FeatureWithVersion } from "../types/models";
-  let { features }: { features: FeatureWithVersion[] } = $props();
+import type { FeatureWithVersion } from "../types/models";
+let { features }: { features: FeatureWithVersion[] } = $props();
 </script>
 
 <div class="relative overflow-x-auto shadow-md rounded-lg">

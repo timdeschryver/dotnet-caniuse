@@ -1,12 +1,16 @@
 <script lang="ts" generics="T">
-  import type { Snippet } from "svelte";
-  import Label from "./Label.svelte";
+import type { Snippet } from "svelte";
+import Label from "./Label.svelte";
 
-  let { label, tags, buttonSnippet, }: { label: string; tags: (T & { selected: boolean })[]; buttonSnippet: Snippet<[T]>; } = $props();
+let {
+	label,
+	tags,
+	buttonSnippet,
+}: { label: string; tags: (T & { selected: boolean })[]; buttonSnippet: Snippet<[T]> } = $props();
 
-  function tagClick(tag: { selected: boolean }) {
-      tag.selected = !tag.selected;
-  }
+function tagClick(tag: { selected: boolean }) {
+	tag.selected = !tag.selected;
+}
 </script>
 
 <Label {label} />

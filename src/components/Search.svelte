@@ -1,17 +1,21 @@
 <script lang="ts">
-  import type { FeatureSelection, VersionSelection } from "../types/models";
-  import SearchField from "./SearchField.svelte";
-  import Tags from "./Tags.svelte";
+import type { FeatureSelection, VersionSelection } from "../types/models";
+import SearchField from "./SearchField.svelte";
+import Tags from "./Tags.svelte";
 
-  let { search = $bindable(""), versions, features }: {
-      search: string;
-      versions: VersionSelection[];
-      features: FeatureSelection[];
-  } = $props();
+let {
+	search = $bindable(""),
+	versions,
+	features,
+}: {
+	search: string;
+	versions: VersionSelection[];
+	features: FeatureSelection[];
+} = $props();
 
-  function isEndOfLife(date: Date): boolean {
-      return date < new Date();
-  }
+function isEndOfLife(date: Date): boolean {
+	return date < new Date();
+}
 </script>
 
 <div class="space-y-2">
