@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { FeatureWithVersion } from "../types/models";
-let { features }: { features: FeatureWithVersion[] } = $props();
+let { features, tagClick }: { features: FeatureWithVersion[]; tagClick: (tag: string) => void } = $props();
 </script>
 
 <div class="relative overflow-x-auto shadow-md rounded-lg">
@@ -31,9 +31,9 @@ let { features }: { features: FeatureWithVersion[] } = $props();
               <td class="px-4 py-3">
                 <div class="flex gap-2 flex-wrap">
                   {#each feature.tags as tag}
-                    <span class="px-3 py-1.5 text-sm rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-800 dark:text-indigo-300">
+                    <button class="px-3 py-1.5 text-sm rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-800 dark:text-indigo-300" onclick={() => tagClick(tag)}>
                       {tag}
-                    </span>
+                    </button>
                   {/each}
                 </div>
               </td>

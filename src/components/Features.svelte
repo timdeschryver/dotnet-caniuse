@@ -7,7 +7,7 @@ let { versions: versionsData }: { versions: Versions } = $props();
 
 let search = $state("");
 let versionsSelection = $state(initializeVersions(versionsData));
-let featuresSelection = $state(initializeFeatureTags(versionsData));
+let tagSelection = $state(initializeFeatureTags(versionsData));
 let featureWithVersion = $state(initializeFeatureWithVersion(versionsData));
 
 function initializeVersions(data: Versions): VersionSelection[] {
@@ -23,7 +23,7 @@ function initializeVersions(data: Versions): VersionSelection[] {
 }
 
 function initializeFeatureTags(data: Versions): FeatureSelection[] {
-	return [...new Set(data.flatMap((v) => v.features.map((f) => f.tags[0])))].toSorted().map((f) => ({
+	return [...new Set(data.flatMap((v) => v.features.flatMap((f) => f.tags)))].toSorted().map((f) => ({
 		name: f,
 		selected: false,
 	}));
@@ -48,7 +48,7 @@ function matchesVersionFilter(feature: FeatureWithVersion, selectedVersions: str
 }
 
 function matchesTagFilter(feature: FeatureWithVersion, selectedTags: string[]): boolean {
-	return selectedTags.length === 0 || selectedTags.some((tag) => feature.tags.includes(tag));
+	return selectedTags.length === 0 || selectedTags.every((tag) => feature.tags.includes(tag));
 }
 
 function sortFeatures(a: FeatureWithVersion, b: FeatureWithVersion): number {
@@ -65,7 +65,7 @@ let filteredFeatures = $derived(
 	featureWithVersion
 		.filter((feature) => {
 			const selectedVersions = versionsSelection.filter((v) => v.selected).map((v) => v.version);
-			const selectedTags = featuresSelection.filter((t) => t.selected).map((t) => t.name);
+			const selectedTags = tagSelection.filter((t) => t.selected).map((t) => t.name);
 
 			return (
 				matchesSearchCriteria(feature, search) &&
@@ -75,13 +75,17 @@ let filteredFeatures = $derived(
 		})
 		.toSorted(sortFeatures),
 );
+
+function tagClick(tag: string) {
+	tagSelection = tagSelection.map((t) => (t.name === tag ? { ...t, selected: !t.selected } : t));
+}
 </script>
 
 <div class="space-y-8">
     <Search
         bind:search
         versions={versionsSelection}
-        features={featuresSelection}
+        features={tagSelection}
     />
-    <DataTable features={filteredFeatures} />
+    <DataTable features={filteredFeatures} tagClick={tagClick} />
 </div>
