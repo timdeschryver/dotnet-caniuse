@@ -36,12 +36,6 @@
 			"docs": "https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/dashboard/enable-browser-telemetry"
 		},
 		{
-			"tags": ["C#"],
-			"name": "params collections",
-			"description": "The params modifier isn't limited to array types. You can now use params with any recognized collection type.",
-			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-13.0/params-collections"
-		},
-		{
 			"tags": ["ASP.NET"],
 			"name": "Static asset delivery optimization",
 			"description": "MapStaticAssets routing endpoint conventions is a new feature that optimizes the delivery of static assets in ASP.NET Core apps.",
@@ -65,7 +59,6 @@
 			"description": "New APIs make it easier to add authentication to an existing Blazor Web App. When you create a new Blazor Web App with authentication using Individual Accounts and you enable WebAssembly-based interactivity, the project includes a custom AuthenticationStateProvider in both the server and client projects.",
 			"docs": "https://learn.microsoft.com/en-us/aspnet/core/blazor/security/?view=aspnetcore-9.0"
 		},
-		
 		{
 			"tags": ["ASP.NET", "Blazor"],
 			"name": "Add static server-side rendering (SSR) pages to a globally-interactive Blazor Web App",
@@ -155,21 +148,13 @@
 			"name": "Microsoft.AspNetCore.OpenApi supports trimming and Native AOT",
 			"description": "OpenAPI in ASP.NET Core supports trimming and native AOT. The following steps create and publish an OpenAPI app with trimming and native AOT.",
 			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#microsoftaspnetcoreopenapi-supports-trimming-and-native-aot"
-		},
-		
+		},	
 		{
 			"tags": ["ASP.NET", "Authentication and authorization"],
 			"name": "Pushed Authorization Requests (PAR)",
 			"description": "OpenIdConnectHandler adds support for Pushed Authorization Requests (PAR).",
 			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#openidconnecthandler-adds-support-for-pushed-authorization-requests-par"
 		},
-		{
-			"tags": ["ASP.NET", "Authentication and authorization"],
-			"name": "OIDC and OAuth Parameter Customization",
-			"description": "",
-			"docs": ""
-		},
-		
 		{
 			"tags": ["ASP.NET", "Authentication and authorization"],
 			"name": "OIDC and OAuth Parameter Customization",
@@ -255,11 +240,10 @@
 			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#azure-cosmos-db-for-nosql"
 		},
 		{
-			"tags": ["Entity Framework"],
+			"tags": ["Entity Framework", "experimental"],
 			"name": "AOT and pre-compiled queries",
 			"description": "EF 9.0 brings initial, experimental support for .NET NativeAOT, allowing the publishing of ahead-of-time compiled applications which make use of EF to access databases.",
-			"docs": "https://learn.microsoft.com/en-us/ef/core/performance/nativeaot-and-precompiled-queries",
-			"experimental": true
+			"docs": "https://learn.microsoft.com/en-us/ef/core/performance/nativeaot-and-precompiled-queries"
 		},
 		{
 			"tags": ["Entity Framework"],
@@ -308,6 +292,72 @@
 			"name": "Sugar for HierarchyId path generation",
 			"description": "First class support for the SQL Server HierarchyId type was added in EF8. In EF9, a sugar method has been added to make it easier to create new child nodes in the tree structure.",
 			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#sugar-for-hierarchyid-path-generation"
+		},
+		{
+			"tags": ["C#"],
+			"name": "params collections",
+			"description": "The params modifier isn't limited to array types. You can now use params with any recognized collection type.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-13.0/params-collections"
+		},
+		{
+			"tags": ["C#"],
+			"name": "New lock object",
+			"description": "The .NET 9 runtime includes a new type for thread synchronization, the System.Threading.Lock type. This type provides better thread synchronization through its API.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#new-lock-object"
+		},
+		{
+			"tags": ["C#"],
+			"name": "New escape sequence",
+			"description": "You can use \\e as a character literal escape sequence for the ESCAPE character, Unicode U+001B.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#new-escape-sequence"
+		},
+		{
+			"tags": ["C#"],
+			"name": "Method group natural type",
+			"description": "This feature makes small optimizations to overload resolution involving method groups. A method group is a method and all overloads with the same name.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-13.0/method-group-natural-type-improvements"
+		},
+		{
+			"tags": ["C#"],
+			"name": "Implicit index access",
+			"description": "The implicit \"from the end\" index operator, ^, is now allowed in an object initializer expression. For example, you can now initialize an array in an object initializer.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#implicit-index-access"
+		},
+		{
+			"tags": ["C#"],
+			"name": "ref and unsafe in iterators and async methods",
+			"description": "This feature and the following two features enable ref struct types to use new constructs. You won't use these unless you write your own ref struct types. More likely, you'll see an indirect benefit as System.Span<T> and System.ReadOnlySpan<T> gain more functionality.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#ref-and-unsafe-in-iterators-and-async-methods"
+		},
+		{
+			"tags": ["C#"],
+			"name": "allows ref struct",
+			"description": "ore C# 13, ref struct types couldn't be declared as the type argument for a generic type or method. Now, generic type declarations can add an anti-constraint, allows ref struct.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13#allows-ref-struct"
+		},
+		{
+			"tags": ["C#"],
+			"name": "ref struct interfaces",
+			"description": "You can declare that a ref struct type implements an interface",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/ref-struct#restrictions-for-ref-struct-types-that-implement-an-interface"
+		},
+		{
+			"tags": ["C#"],
+			"name": "More partial members",
+			"description": "You can declare partial properties and partial indexers in C# 13.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/partial-member"
+		},
+		{
+			"tags": ["C#"],
+			"name": "Overload resolution priority",
+			"description": "In C# 13, the compiler recognizes the OverloadResolutionPriorityAttribute to prefer one overload over another. Library authors can use this attribute to ensure that a new, better overload is preferred over an existing overload.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/attributes/general#overloadresolutionpriority-attribute"
+		},
+		{
+			"tags": ["C#", "preview"],
+			"name": "The field keyword",
+			"description": "The field contextual keyword is in C# 13 as a preview feature. The token field accesses the compiler synthesized backing field in a property accessor. It enables you to write an accessor body without declaring an explicit backing field in your type declaration. You can declare a body for one or both accessors for a field backed property.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/field"
 		}
 	]
 }
