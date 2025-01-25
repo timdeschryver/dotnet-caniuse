@@ -42,10 +42,211 @@
 			"docs": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-13.0/params-collections"
 		},
 		{
+			"tags": ["ASP.NET"],
+			"name": "Static asset delivery optimization",
+			"description": "MapStaticAssets routing endpoint conventions is a new feature that optimizes the delivery of static assets in ASP.NET Core apps.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.staticassetsendpointroutebuilderextensions.mapstaticassets?view=aspnetcore-9.0"
+		},
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": ".NET MAUI Blazor Hybrid and Web App solution template",
+			"description": "A new solution template makes it easier to create .NET MAUI native and Blazor web client apps that share the same UI. This template shows how to create client apps that maximize code reuse and target Android, iOS, Mac, Windows, and Web.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/blazor/hybrid/tutorials/maui-blazor-web-app?view=aspnetcore-9.0"
+		},
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": "Detect rendering location, interactivity, and assigned render mode at runtime",
+			"description": "A new API designed to simplify the process of querying component states at runtime.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-9.0#detect-rendering-location-interactivity-and-assigned-render-mode-at-runtime"
+		},
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": "Simplified authentication state serialization for Blazor Web Apps",
+			"description": "New APIs make it easier to add authentication to an existing Blazor Web App. When you create a new Blazor Web App with authentication using Individual Accounts and you enable WebAssembly-based interactivity, the project includes a custom AuthenticationStateProvider in both the server and client projects.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/blazor/security/?view=aspnetcore-9.0"
+		},
+		
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": "Add static server-side rendering (SSR) pages to a globally-interactive Blazor Web App",
+			"description": "It's now simpler to add static SSR pages to apps that adopt global interactivity.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-9.0#static-ssr-pages-in-a-globally-interactive-app"
+		},
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": "Constructor injection",
+			"description": "Razor components support constructor injection.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/dependency-injection?view=aspnetcore-9.0#request-a-service-in-a-component"
+		},
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": "Websocket compression for Interactive Server components",
+			"description": "By default, Interactive Server components enable compression for WebSocket connections and set a frame-ancestors Content Security Policy (CSP) directive set to 'self', which only permits embedding the app in an <iframe> of the origin from which the app is served when compression is enabled or when a configuration for the WebSocket context is provided.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/signalr?view=aspnetcore-9.0#websocket-compression-for-interactive-server-components"
+		},
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": "Handle keyboard composition events in Blazor.",
+			"description": "The new KeyboardEventArgs.IsComposing property indicates if the keyboard event is part of a composition session. Tracking the composition state of keyboard events is crucial for handling international character input methods.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#handle-keyboard-composition-events-in-blazor"
+		},
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": "Added OverscanCount parameter to QuickGrid",
+			"description": "The QuickGrid component now exposes an OverscanCount property that specifies how many additional rows are rendered before and after the visible region when virtualization is enabled.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#added-overscancount-parameter-to-quickgrid"
+		},
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": "InputNumber component supports the type=\"range\" attribute",
+			"description": "The InputNumber<TValue> component now supports the type=\"range\" attribute, which creates a range input that supports model binding and form validation, typically rendered as a slider or dial control rather than a text box.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#inputnumber-component-supports-the-typerange-attribute"
+		},
+		{
+			"tags": ["ASP.NET", "Blazor"],
+			"name": "New enhanced navigation events",
+			"description": "Trigger JavaScript callbacks either before or after enhanced navigation with new event listeners.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/blazor/javascript-interoperability/static-server-rendering?view=aspnetcore-9.0"
+		},
+		{
+			"tags": ["ASP.NET", "SignalR"],
+			"name": "Polymorphic type support in SignalR Hubs",
+			"description": "Hub methods can now accept a base class instead of the derived class to enable polymorphic scenarios. The base type needs to be annotated to allow polymorphism.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/polymorphism"
+		},
+		{
+			"tags": ["ASP.NET", "SignalR"],
+			"name": "Improved Activities for SignalR",
+			"description": "SignalR now has an ActivitySource for both the hub server and client.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#improved-activities-for-signalr"
+		},
+		{
+			"tags": ["ASP.NET", "SignalR"],
+			"name": "SignalR supports trimming and Native AOT",
+			"description": "Enables trimming and native ahead-of-time (AOT) compilation support for both SignalR client and server scenarios. You can now take advantage of the performance benefits of using Native AOT in applications that use SignalR for real-time web communications.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#signalr-supports-trimming-and-native-aot"
+		},
+		{
+			"tags": ["ASP.NET", "Minimal APIs"],
+			"name": "Added InternalServerError and InternalServerError<TValue> to TypedResults",
+			"description": "TypedResults now includes factory methods and types for returning \"500 Internal Server Error\" responses from endpoints.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#added-internalservererror-and-internalservererrortvalue-to-typedresults"
+		},
+		{
+			"tags": ["ASP.NET", "Minimal APIs"],
+			"name": "Call ProducesProblem and ProducesValidationProblem on route groups",
+			"description": "The ProducesProblem and ProducesValidationProblem extension methods have been updated to support their use on route groups.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#call-producesproblem-and-producesvalidationproblem-on-route-groups"
+		},
+		{
+			"tags": ["ASP.NET", "Minimal APIs"],
+			"name": "Problem and ValidationProblem result types support construction with IEnumerable<KeyValuePair<string, object?>> values",
+			"description": "Prior to .NET 9, constructing Problem and ValidationProblem result types in minimal APIs required that the errors and extensions properties be initialized with an implementation of IDictionary<string, object?>. In this release, these construction APIs support overloads that consume IEnumerable<KeyValuePair<string, object?>>.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#problem-and-validationproblem-result-types-support-construction-with-ienumerablekeyvaluepairstring-object-values"
+		},
+		{
 			"tags": ["ASP.NET", "OpenAPI"],
 			"name": "OpenAPI document generation",
 			"description": "Built-in support for generating OpenAPI documents from ASP.NET Core web APIs.",
-			"docs": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/aspnetcore-openapi?view=aspnetcore-9.0&tabs=visual-studio"
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/aspnetcore-openapi?view=aspnetcore-9.0"
+		},
+		{
+			"tags": ["ASP.NET", "OpenAPI"],
+			"name": "Microsoft.AspNetCore.OpenApi supports trimming and Native AOT",
+			"description": "OpenAPI in ASP.NET Core supports trimming and native AOT. The following steps create and publish an OpenAPI app with trimming and native AOT.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#microsoftaspnetcoreopenapi-supports-trimming-and-native-aot"
+		},
+		
+		{
+			"tags": ["ASP.NET", "Authentication and authorization"],
+			"name": "Pushed Authorization Requests (PAR)",
+			"description": "OpenIdConnectHandler adds support for Pushed Authorization Requests (PAR).",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#openidconnecthandler-adds-support-for-pushed-authorization-requests-par"
+		},
+		{
+			"tags": ["ASP.NET", "Authentication and authorization"],
+			"name": "OIDC and OAuth Parameter Customization",
+			"description": "",
+			"docs": ""
+		},
+		
+		{
+			"tags": ["ASP.NET", "Authentication and authorization"],
+			"name": "OIDC and OAuth Parameter Customization",
+			"description": "The OAuth and OIDC authentication handlers now have an AdditionalAuthorizationParameters option to make it easier to customize authorization message parameters that are usually included as part of the redirect query string.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#oidc-and-oauth-parameter-customization"
+		},
+		{
+			"tags": ["ASP.NET", "Authentication and authorization"],
+			"name": "Configure HTTP.sys extended authentication flags",
+			"description": "You can now configure the HTTP_AUTH_EX_FLAG_ENABLE_KERBEROS_CREDENTIAL_CACHING and HTTP_AUTH_EX_FLAG_CAPTURE_CREDENTIAL HTTP.sys flags by using the new EnableKerberosCredentialCaching and CaptureCredentials properties on the HTTP.sys AuthenticationManager to optimize how Windows authentication is handled.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#configure-httpsys-extended-authentication-flags"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "New HybridCache library",
+			"description": "The HybridCache API bridges some gaps in the existing IDistributedCache and IMemoryCache APIs.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/performance/caching/hybrid?view=aspnetcore-9.0"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "Developer exception page improvements",
+			"description": "The ASP.NET Core developer exception page is displayed when an app throws an unhandled exception during development. The developer exception page provides detailed information about the exception and request.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#developer-exception-page-improvements"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "Dictionary debugging improvements",
+			"description": "The debugging display of dictionaries and other key-value collections has an improved layout.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#dictionary-debugging-improvements"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "Fix for 503's during app recycle in IIS",
+			"description": "By default there is now a 1 second delay between when IIS is notified of a recycle or shutdown and when ANCM tells the managed server to start shutting down. The delay is configurable via the ANCM_shutdownDelay environment variable or by setting the shutdownDelay handler setting.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#fix-for-503s-during-app-recycle-in-iis"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "ASP0026: Analyzer to warn when [Authorize] is overridden by [AllowAnonymous] from \"farther away\"",
+			"description": "Introduced an analyzer that will highlight instances like these where a closer [Authorize] attribute gets overridden by an [AllowAnonymous] attribute that is farther away from an MVC action.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#asp0026-analyzer-to-warn-when-authorize-is-overridden-by-allowanonymous-from-farther-away"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "Customize Kestrel named pipe endpoints",
+			"description": "Kestrel's named pipe support has been improved with advanced customization options. The new CreateNamedPipeServerStream method on the named pipe options allows pipes to be customized per-endpoint.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#customize-kestrel-named-pipe-endpoints"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "ExceptionHandlerMiddleware option to choose the status code based on the exception type",
+			"description": "A new option when configuring the ExceptionHandlerMiddleware enables app developers to choose what status code to return when an exception occurs during request handling. The new option changes the status code being set in the ProblemDetails response from the ExceptionHandlerMiddleware.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#exceptionhandlermiddleware-option-to-choose-the-status-code-based-on-the-exception-type"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "Opt-out of HTTP metrics on certain endpoints and requests",
+			"description": ".NET 9 introduces the ability to opt-out of HTTP metrics for specific endpoints and requests.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#opt-out-of-http-metrics-on-certain-endpoints-and-requests"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "Data Protection support for deleting keys",
+			"description": "Prior to .NET 9, data protection keys were not deletable by design, to prevent data loss. Deleting a key renders its protected data irretrievable. Given their small size, the accumulation of these keys generally posed minimal impact. However, to accommodate extremely long-running services, we have introduced the option to delete keys.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#data-protection-support-for-deleting-keys"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "Middleware supports Keyed DI",
+			"description": "Middleware now supports Keyed DI in both the constructor and the Invoke/InvokeAsync method.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#middleware--supports-keyed-di"
+		},
+		{
+			"tags": ["ASP.NET"],
+			"name": "Trust the ASP.NET Core HTTPS development certificate on Linux",
+			"description": "On Ubuntu and Fedora based Linux distros, dotnet dev-certs https --trust now configures ASP.NET Core HTTPS development certificate as a trusted certificate.",
+			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#trust-the-aspnet-core-https-development-certificate-on-linux"
 		}
 	]
 }
