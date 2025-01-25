@@ -30,6 +30,54 @@
 			"docs": "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.index"
 		},
 		{
+			"tags": ["Libraries"],
+			"name": "Date and time - new TimeSpan.From* overloads",
+			"description": "NET 9 adds new overloads that let you create TimeSpan objects from integers. There are new overloads from FromDays, FromHours, FromMinutes, FromSeconds, FromMilliseconds, and FromMicroseconds.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/libraries#date-and-time---new-timespanfrom-overloads"
+		},
+		{
+			"tags": ["Libraries"],
+			"name": "Base64Url",
+			"description": ".NET 9 includes the new Base64Url class, which provides many helpful and optimized methods for encoding and decoding with Base64Url to and from a variety of data types.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/libraries#base64url"
+		},
+		{
+			"tags": ["Libraries"],
+			"name": "BinaryFormatter",
+			"description": ".NET 9 removes BinaryFormatter from the .NET runtime. The APIs are still present, but their implementations always throw an exception, regardless of project type.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/standard/serialization/binaryformatter-migration-guide/"
+		},
+		{
+			"tags": ["Libraries", "Collections"],
+			"name": "Collection lookups with spans",
+			"description": "With the new allows ref struct feature in C# 13 and new features on these collection types in .NET 9, it's now possible to perform these kinds of lookups.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/libraries#collection-lookups-with-spans"
+		},
+		{
+			"tags": ["Libraries", "Collections"],
+			"name": "OrderedDictionary<TKey, TValue>",
+			"description": ".NET 9 introduces the long-requested OrderedDictionary<TKey,TValue> collection, which provides an efficient, generic type to support these scenarios.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/libraries#ordereddictionarytkey-tvalue"
+		},
+		{
+			"tags": ["Libraries", "Collections"],
+			"name": "PriorityQueue.Remove() method",
+			"description": "The new PriorityQueue<TElement,TPriority>.Remove(TElement, TElement, TPriority, IEqualityComparer<TElement>) method makes it possible to emulate priority updates.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/libraries#priorityqueueremove-method"
+		},
+		{
+			"tags": ["Libraries", "Collections"],
+			"name": "ReadOnlySet<T>",
+			"description": ".NET 9 introduces ReadOnlySet<T>.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/libraries#readonlysett"
+		},
+		{
+			"tags": ["Libraries"],
+			"name": "Logging source generator",
+			"description": "C# 12 introduced primary constructors, which allow you to define a constructor directly on the class declaration. The logging source generator now supports logging using classes that have a primary constructor.",
+			"docs": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-9/libraries#logging-source-generator"
+		},
+		{
 			"tags": ["Aspire"],
 			"name": "Browser telemetry support",
 			"description": "The dashboard supports OpenTelemetry Protocol (OTLP) over HTTP and cross-origin resource sharing (CORS). These features unlock the ability to send OpenTelemetry from browser apps to the .NET Aspire dashboard.",
