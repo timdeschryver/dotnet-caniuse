@@ -247,6 +247,67 @@
 			"name": "Trust the ASP.NET Core HTTPS development certificate on Linux",
 			"description": "On Ubuntu and Fedora based Linux distros, dotnet dev-certs https --trust now configures ASP.NET Core HTTPS development certificate as a trusted certificate.",
 			"docs": "https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-9.0?view=aspnetcore-9.0#trust-the-aspnet-core-https-development-certificate-on-linux"
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "Azure Cosmos DB for NoSQL",
+			"description": "EF 9.0 brings substantial improvements to the EF Core provider for Azure Cosmos DB; significant parts of the provider have been rewritten to provide new functionality, allow new forms of queries, and better align the provider with Azure Cosmos DB best practices.",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#azure-cosmos-db-for-nosql"
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "AOT and pre-compiled queries",
+			"description": "EF 9.0 brings initial, experimental support for .NET NativeAOT, allowing the publishing of ahead-of-time compiled applications which make use of EF to access databases.",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/performance/nativeaot-and-precompiled-queries",
+			"experimental": true
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "SQL optimizations",
+			"description": "Like with every release, EF9 includes a large number of improvements to the LINQ querying capabilities. New queries can be translated, and many SQL translations for supported scenarios have been improved, for both better performance and readability.",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#linq-and-sql-translation"
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "Auto-compiled models",
+			"description": "Compiled models can improve startup time for applications with large models--that is entity type counts in the 100s or 1000s.",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#auto-compiled-models"
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "Auto-compiled models",
+			"description": "Compiled models can improve startup time for applications with large models--that is entity type counts in the 100s or 1000s.",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#auto-compiled-models"
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "Read-only primitive collections",
+			"description": "EF.8 introduced support for mapping arrays and mutable lists of primitive types. This has been expanded in EF9 to include read-only collections/lists. Specifically, EF9 supports collections typed as IReadOnlyList, IReadOnlyCollection, or ReadOnlyCollection",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#read-only-primitive-collections"
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "Specify fill-factor for keys and indexes",
+			"description": "EF9 supports specification of the SQL Server fill-factor when using EF Core Migrations to create keys and indexes.",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#specify-fill-factor-for-keys-and-indexes"
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "Make existing model building conventions more extensible",
+			"description": "Public model building conventions for applications were introduced in EF7. In EF9, we have made it easier to extend some of the existing conventions.",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#make-existing-model-building-conventions-more-extensible"
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "Update ApplyConfigurationsFromAssembly to call non-public constructors",
+			"description": "In previous versions of EF Core, the ApplyConfigurationsFromAssembly method only instantiated configuration types with a public, parameterless constructors. In EF9, we have both improved the error messages generated when this fails, and also enabled instantiation by non-public constructor.",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#update-applyconfigurationsfromassembly-to-call-non-public-constructors"
+		},
+		{
+			"tags": ["Entity Framework"],
+			"name": "Sugar for HierarchyId path generation",
+			"description": "First class support for the SQL Server HierarchyId type was added in EF8. In EF9, a sugar method has been added to make it easier to create new child nodes in the tree structure.",
+			"docs": "https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#sugar-for-hierarchyid-path-generation"
 		}
 	]
 }
